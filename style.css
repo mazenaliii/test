@@ -110,7 +110,9 @@ img {
 }
 
 .header .content .text img {
-    width: 550px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .header .content .text h3 {
@@ -188,7 +190,8 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 547px;
+    width: 100%;
+    max-width: 547px;
     height: 371px;
     border-radius: 8px;
     background: #CACACA;
@@ -683,6 +686,23 @@ margin: 0px;
 }
 
 @media (max-width: 768px) {
+    .header .content {
+        margin-top: 80px;
+    }
+    
+    .header .content .text {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .header .content .text h3 {
+        margin: 20px 0 40px 0;
+        font-size: 24px;
+    }
+    
+    .header .content .buttons {
+        margin-left: 0;
+    }
     .simple-footer {
         flex-direction: column;
         margin-left: 0;
@@ -786,12 +806,144 @@ margin: 0px;
         font-size: 15px;
     }
     
+    .bars {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    .header .logo img {
+        width: 50px;
+    }
+
+    .service .title h2{
+        font-size: 20px;
+    }
 
 }
 
-@media (max-width: 630px) {
-    .about-us .berlin  img {
-        margin-right: 60px;
+@media only screen and (max-width: 425px) {
+    .header, .about-us {
+        overflow: hidden;
+
+    }
+    .bars {
+       position: absolute; 
+       overflow: hidden;
+
+    }
+    .dropdown_menu {
+        position: absolute;
+        overflow: hidden;
+
+    }
+    .header .content .text img {
+        width: 200px;
+        position: relative;
+        right: -50px;
+    }
+    .header .content .text h2 {
+        font-size: 20px;
+        position: relative;
+        right: -50px;
+    }
+    .header .content .buttons a{
+        font-size: 15px;
+        position: relative;
+    }
+    .service .services .first-service {
+        width: 300px;
+        height: 250px;
+    }
+    .service .services .first-service .title img {
+        width: 70px;
+        
+    }
+    .service .services .first-service .title {
+        position: relative;
+        left:  100px;
+        top: 30px;
+    }
+    .service .services .first-service .title h2 {
+        font-size: 20px;
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+    .service .services .first-service .description p {
+        font-size: 10px;
+        width: 200px;
+    }
+    .service .services .first-service .button {
+        position: absolute;
+        right: 150px;
+        top: 200px;
+    }
+    .service .services .first-service .button a {
+        font-size: 10px;
+    }
+    .service .services .first-service .button h4 {
+        font-size: 10px;
+        position: relative;
+        left: -50px;
+    }
+    .service .extra-services .first-service {
+        width: 300px;
+        height: 250px;
+    }
+    .service .extra-services .first-service .title img {
+        width: 70px;
+        
+    }
+    .service .extra-services .first-service .title {
+        position: relative;
+        left:  100px;
+        top: 30px;
+    }
+    .service .extra-services .first-service .title h2 {
+        font-size: 20px !important;
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+    .service .extra-services .first-service .description p {
+        font-size: 10px;
+        width: 200px;
+    }
+    .service .extra-services .first-service .button {
+        position: absolute;
+        right: 150px;
+        top: 200px;
+    }
+    .service .extra-services .first-service .button a {
+        font-size: 10px;
+    }
+    .service .extra-services .first-service .button h4 {
+        font-size: 10px;
+        position: relative;
+        left: -50px;
+    }
+    .about-us .berlin img{
+        width: 400px;
+        position: relative;
+        right: -20px;
+    }
+    .about-us .description {
+        position: relative;
+        left: -50px;
+        margin-right: 0;
+        overflow: hidden;
+    }
+    
+    .simple-footer  {
+        width: 100%;
     }
 
+    .about-us .image {
+        display: none;
+    }
 }
